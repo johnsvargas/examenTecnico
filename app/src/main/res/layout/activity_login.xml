@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/right_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/left_guideline" />
+
+    <TextView
+        android:id="@+id/tv_title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/title_login"
+        android:textSize="@dimen/text_size_title_principal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:buttonSize="wide"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_left_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right_login"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_login" />
+
+    <Button
+        android:id="@+id/b_sing_out_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sing out"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_left_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline_right_login"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

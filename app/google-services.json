@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "227537245668",
+    "firebase_url": "https://pruebasjc-f7bda.firebaseio.com",
+    "project_id": "pruebasjc-f7bda",
+    "storage_bucket": "pruebasjc-f7bda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227537245668:android:dc6b964b3fe4d13293a3f1",
+        "android_client_info": {
+          "package_name": "com.juancarlos.examentecnico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227537245668-mrkkns7pse6tafu7q6a9mvm3ov0af950.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juancarlos.examentecnico",
+            "certificate_hash": "34d9b4b4ac6cec7fb961e142d3120e5c9c3f6de7"
+          }
+        },
+        {
+          "client_id": "227537245668-088o9embgspq3pn7ernv6nva57rbuc5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7J0YKZdDVOAGI1IqzuJW6bBGWsUKR3xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227537245668-088o9embgspq3pn7ernv6nva57rbuc5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
