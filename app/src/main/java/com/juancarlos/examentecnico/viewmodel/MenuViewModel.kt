@@ -1,7 +1,10 @@
 package com.juancarlos.examentecnico.viewmodel
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.juancarlos.examentecnico.model.reposotories.EmployeesRepository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MenuViewModel:ViewModel() {
     private val employeesRepository = EmployeesRepository()
@@ -9,6 +12,8 @@ class MenuViewModel:ViewModel() {
     fun getUrlEmployees() = employeesRepository.urlEmployeesJson
 
     fun callEmployees(){
-        employeesRepository.callEmployees()
+        viewModelScope.launch(Dispatchers.IO) {
+            employeesRepository.callEmployees()
+        }
     }
 }

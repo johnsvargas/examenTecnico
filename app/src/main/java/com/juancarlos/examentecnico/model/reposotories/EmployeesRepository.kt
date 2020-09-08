@@ -12,6 +12,7 @@ import retrofit2.Response
 class EmployeesRepository {
     var urlEmployeesJson: MutableLiveData<String> = MutableLiveData()
     fun callEmployees(){
+
         ApiAdapter.apiService.getEmployees().enqueue(object : Callback<GeneralResponse>{
             override fun onResponse(
                 call: Call<GeneralResponse>,
